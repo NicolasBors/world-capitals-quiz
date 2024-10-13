@@ -3,6 +3,7 @@
 This project is a world capitals quiz application built with Golang. It consists of two components:
 
 **Backend**: A REST API that serves quiz questions and processes user submissions.
+
 **CLI**: A CLI using Cobra to interact with the quiz, fetch questions and submit answers.
 
 ## Installation
@@ -16,10 +17,10 @@ cd world-capitals-quiz
 
 2. **Install dependencies**
 
-Make sure you have Go installed, then run the following command to intsall Cobra:
+Make sure you have Go installed, then run the following command to install dependencies:
 
 ```bash
-go get -u github.com/spf13/cobra
+go get -u
 ```
 
 ## Running the API
@@ -43,3 +44,14 @@ go run main.go start
 ```
 
 The CLI will prompt you to answer the questions and submit your answers. At the end, you'll get feedback on your performance.
+
+## Run the tests
+
+To run the tests, execute:
+
+```bash
+cd api
+go test
+```
+
+This will run the tests in the main_test.go file and display the results.
